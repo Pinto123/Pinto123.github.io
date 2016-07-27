@@ -1,0 +1,176 @@
+<html>
+	<head>
+	<title>My Name is Max </title>
+	<h1>Max's website</h1>
+
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #006400;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #006400;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 10px;
+    border-top: none;
+}
+</style>
+<body background="http://www.bestcoloringpagesforkids.com/wp-content/uploads/2013/06/Printable-Fruit-Coloring-Page-For-Kids.jpg">
+
+<ul class="tab">
+  <li><a href="puppy.html" class="tablinks" >Tom</a></li>
+  <li><a href="Karl.html" class="tablinks" >Judson</a></li>
+  <li><a href="hippo.html" class="tablinks" >Jerry</a></li>
+  <li><a href="candy.html" class="tablinks" >Prices</a></li>
+
+  <li><a href="#" class="tablinks"><head>
+<style>
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('http://www.bestcoloringpagesforkids.com/wp-content/uploads/2013/06/Printable-Fruit-Coloring-Page-For-Kids.jpg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+</style>
+</head>
+<body>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+
+</form>
+
+
+
+</body></a></li>
+</ul>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+
+	<!--<style>
+		body{
+			color:rgb(255,0,22);
+		}
+
+		#face {
+			color:rgb(0,255,300);
+
+		}
+
+		.whoa {
+			font-size:72;
+		}
+	</style>-->
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<div align="center">
+	<script>
+    	var name = prompt("What is your name?")
+    	if(name == uname) {
+    		alert("cool")
+    	}
+    </script>
+    <div align="right">
+    <canvas id="can" width="200" height="200" style="border:7px solid #000000;">
+	</canvas>
+	<script>
+		var c = document.getElementById("can");
+		var ctx = c.getContext("2d");
+		ctx.fillStyle="#FF0000";
+		ctx.fillRect(0,0,200,200);
+	</script>
+
+
+
+		<div id="face" class="whoa">
+		</div>
+
+
+
+	</body>
+	</div>
+	<!--canvas id="can" width="200" height="200" style="border:7px solid #000000;">
+	</canvas>
+	<<script>
+		var c = document.getElementById("can");
+		var ctx = c.getContext("2d");
+		ctx.fillStyle="#FF0000";
+		ctx.fillRect(0,0,200,200);
+	</script>-->
+</html>
